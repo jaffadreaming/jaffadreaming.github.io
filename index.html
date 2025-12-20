@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>jaffadreaming®</title>
+
   <!-- 98.css -->
   <link rel="stylesheet" href="style.css">
+
   <style>
     body {
       font-family: "MS UI Gothic", Tahoma, Geneva, sans-serif;
@@ -12,7 +14,7 @@
       background-color: #08031A;
       background-image: url('https://raw.githubusercontent.com/jaffadreaming/jaffadreaming.github.io/refs/heads/main/bg.gif');
       background-size: 150px;
-      color: #fceaff;
+      color: #000;
     }
 
     * {
@@ -35,41 +37,36 @@
     }
 
     aside {
-      background-color: #241445;
+      background-color: #434a71;
       width: 200px;
-      padding: 0px;
+      padding: 0;
       font-size: smaller;
     }
 
     main {
-      background-color: #43256E;
+      background-color: #c3c3c3;
       flex: 1;
       padding: 20px;
-      order: 2;
-    }
-
-    #leftSidebar {
-      order: 1;
+      border: double 3px #818181;
     }
 
     footer {
-      background-color: #13092D;
+      background-color: #818181;
       width: 100%;
-      height: 40px;
-      padding: 10px;
+      height: 41px;
+      padding: 0px;
       text-align: center;
+      color: #fff;
+      border: ridge 5px #c3c3c3;
     }
 
-    h1, h2, h3 {
-      color: #ED64F5;
+    h1, h2, h3,
+    strong {
+      color: #0e1111;
     }
 
     h1 {
       font-size: 25px;
-    }
-
-    strong {
-      color: #ED64F5;
     }
 
     .box {
@@ -78,7 +75,7 @@
       padding: 10px;
     }
 
-    @media only screen and (max-width: 800px) {
+    @media (max-width: 800px) {
       #flex {
         flex-wrap: wrap;
       }
@@ -86,74 +83,66 @@
       aside {
         width: 100%;
       }
-
-      main {
-        order: 1;
-      }
-
-      #leftSidebar {
-        order: 2;
-      }
     }
   </style>
 </head>
+
 <body>
   <div id="container">
-    <div id="headerArea">
-      <div id="header">
-        <img src="header.gif" alt="Header">
-      </div>
-    </div>
-    
-    <div id="flex">
-      <aside id="leftSidebar">
 
-    <a class="navbutton" href="index.html" id="Home" title="Home">
-    Home
-    <a class="navbutton" href="cd.html" id="CDCollection" title="CD Collection">
-    CD Collection
-    <a class="navbutton" href="miranda.html" id="MirandaGallery" title="Miranda Gallery">
-    Miranda Gallery
-    <a class="navbutton" href="" id="ComingSoon" title="Coming Soon...">
-    Coming Soon...
-    <a class="navbutton" href="" id="ComingSoon" title="Coming Soon...">
-    Coming Soon...
-    <a class="navbutton" href="" id="ComingSoon" title="Coming Soon...">
-    Coming Soon...
-    <a class="navbutton" href="" id="ComingSoon" title="Coming Soon...">
-    Coming Soon...
-    <a class="navbutton" href="" id="ComingSoon" title="Coming Soon...">
-    Coming Soon...
-    <a class="navbutton" href="" id="ComingSoon" title="Coming Soon...">
-    Coming Soon...
-    <a class="navbutton" href="" id="ComingSoon" title="Coming Soon...">
-    Coming Soon...
-    
-    </a>
-    <div></div> 
-    </aside>
+    <header id="header">
+      <img src="header/header.gif" alt="Header">
+    </header>
+
+    <div id="flex">
+
+      <aside>
+        <a class="navbutton" href="index.html">Home</a>
+        <a class="navbutton" href="cd.html">CD Collection</a>
+        <a class="navbutton" href="miranda.html">Miranda Gallery</a>
+
+        <a class="navbutton" href="#">Coming Soon...</a>
+        <a class="navbutton" href="#">Coming Soon...</a>
+        <a class="navbutton" href="#">Coming Soon...</a>
+        <a class="navbutton" href="#">Coming Soon...</a>
+        <a class="navbutton" href="#">Coming Soon...</a>
+        <a class="navbutton" href="#">Coming Soon...</a>
+        <a class="navbutton" href="#">Coming Soon...</a>
+        
+      </aside>
 
       <main>
-        <h1>welcome to jaffadreaming.com</h1>
-    
-        <p>though not quite finished just yet, i hope for this project to be continued long term. </p>
+        <b>welcome to jaffadreaming.com! <img src="dream.gif" alt=""></b>
 
-        <p>my current goals include:
-            <li>finishing up pages
-            <li>designing more UI
-            <li>upload lots of photos/designs
-            <li>have fun
 
-            </li> 
-        
-        <p> </p>
-        <p> wish me luck! - jaffa ( _  _ ) ᶻ 𝗓 𐰁 </p>            
+        <p>
+          though not quite finished just yet, i hope for this project to be
+          continued long term.
         </p>
+
+        <p>my current goals include:</p>
+
+        <ul>
+          <li>finishing up pages</li>
+          <li>designing more UI</li>
+          <li>upload lots of photos/designs</li>
+          <li>have fun</li>
+        </ul>
+
+        <p>wish me luck! — jaffa ( _ _ ) ᶻ 𝗓 𐰁</p>
       </main>
+
     </div>
 
-    <footer id="footer">idk what to put here just yet...</footer>
+    <footer>
+      <img src="webdesign.png">
+      <img src="wii.gif">
+      <img src="getfirefox.gif">
+      <img src="mariokart.png">
+      <img src="nland.gif">
+      <img src="internetarchive.gif">
+    </footer>
+
   </div>
 </body>
 </html>
-
